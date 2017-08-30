@@ -1,0 +1,30 @@
+{
+  "name": "react-results-controller",
+  "version": "1.0.0",
+  "description": "Helper class to marshall and assist in jquery control updates in React projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "fred"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anamico/ReactResultController.git"
+  },
+  "keywords": [
+    "react",
+    "table",
+    "data",
+    "source",
+    "collection",
+    "jquery",
+    "array",
+    "controller",
+    "callback"
+  ],
+  "author": "Andrew Longhorn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anamico/ReactResultController/issues"
+  },
+  "homepage": "https://github.com/Anamico/ReactResultController#readme"
+}
