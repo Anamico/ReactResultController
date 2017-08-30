@@ -18,11 +18,13 @@ In Node.js:
 var Controller = require('react-results-controller');
 // Load only the KeyedFlatResultsController.
 var KeyedController = require('react-results-controller').KeyedFlatResultsController;
+```
 
 ## Usage
 ```js
 // Import the controller type you wish to create
 import { KeyedFlatResultsController } from 'react-results-controller';
+```
 
 This initial version supports a single flat array style controller as a key/value set inside an object structure. The key being the primary key of the object:
 
@@ -41,6 +43,7 @@ This initial version supports a single flat array style controller as a key/valu
     worth: 20000
   }
 }
+```
 
 This controller works as a flat array controller (no sections, or exactly 1 section, whichever way you want to look at it).
 
@@ -56,6 +59,7 @@ constructor(...args) {
     didChangeContent: this.didChangeContent.bind(this)
   });
 }
+```
 
 When you receive a new data set, or alter the data set, pass it through to the results controller and it will work out all the additions, deletions and modifications, calling the "didChangeObject(changetype, object)" callback for each one.
 
@@ -65,7 +69,9 @@ Write your callbacks to handle each change detected as the callbacks are trigger
 willChangeContent() {
   console.log('willChangeContent');
 }
+```
 
+```js
 didChangeObject(changeType, obj) {
   var table = $('#devicesTable').DataTable();
   if (table) {
@@ -89,13 +95,16 @@ didChangeObject(changeType, obj) {
     }
   }
 }
+```
 
+```js
 didChangeContent() {
   console.log('didChangeContent');
   if (this.table) {
     this.table.draw();
   }
 }
+```
 
 
 ## Support
