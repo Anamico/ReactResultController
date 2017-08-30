@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/Anamico/ReactResultController/issues"
   },
-  "homepage": "https://github.com/Anamico/ReactResultController#readme"
+  "homepage": "https://github.com/Anamico/ReactResultController#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
 }
